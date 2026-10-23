@@ -1,0 +1,407 @@
+[
+  {
+    "ContainingType": "Antonelly.Catalog.Api.Controllers.CategoriesController",
+    "Method": "GetListCategories",
+    "RelativePath": "api/categories/GetListCategories/{companySlug}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "companySlug",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Antonelly.Catalog.Api.Controllers.HealthController",
+    "Method": "Get",
+    "RelativePath": "api/Health",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Antonelly.Catalog.Api.Controllers.ImagesController",
+    "Method": "Upload",
+    "RelativePath": "api/images/upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Antonelly.Catalog.Api.Controllers.ProductImagesController",
+    "Method": "DeleteImage",
+    "RelativePath": "api/product-images/DeleteImage/{productId}/{imageId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "imageId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Antonelly.Catalog.Api.Controllers.ProductImagesController",
+    "Method": "GetListImages",
+    "RelativePath": "api/product-images/GetListImages/{productId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Antonelly.Catalog.Api.Controllers.ProductImagesController",
+    "Method": "SetMainImage",
+    "RelativePath": "api/product-images/SetMainImage/{productId}/{imageId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "imageId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Antonelly.Catalog.Api.Controllers.ProductImagesController",
+    "Method": "UpdateImageOrder",
+    "RelativePath": "api/product-images/UpdateImageOrder/{productId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Antonelly.Catalog.Api.DTOs.ProductImages.UpdateProductImageOrderRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Antonelly.Catalog.Api.Controllers.ProductImagesController",
+    "Method": "UploadImage",
+    "RelativePath": "api/product-images/UploadImage/{productId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "productId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "AltText",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsMain",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Antonelly.Catalog.Api.Controllers.ProductsController",
+    "Method": "Create",
+    "RelativePath": "api/products/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Antonelly.Catalog.Api.DTOs.Products.CreateProductRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Antonelly.Catalog.Api.Controllers.ProductsController",
+    "Method": "FindById",
+    "RelativePath": "api/products/FindById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Antonelly.Catalog.Api.Controllers.ProductsController",
+    "Method": "GetListProducts",
+    "RelativePath": "api/products/GetListProducts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Antonelly.Catalog.Api.DTOs.Products.GetListProductsRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Antonelly.Catalog.Api.Controllers.ProductsController",
+    "Method": "Update",
+    "RelativePath": "api/products/Update/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Antonelly.Catalog.Api.DTOs.Products.UpdateProductRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Antonelly.Catalog.Api.Controllers.ProductsController",
+    "Method": "UpdateStatus",
+    "RelativePath": "api/products/UpdateStatus/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Antonelly.Catalog.Api.DTOs.Products.UpdateProductStatusRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Antonelly.Catalog.Api.Controllers.ProductsController",
+    "Method": "UpdateVisibility",
+    "RelativePath": "api/products/UpdateVisibility/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Antonelly.Catalog.Api.DTOs.Products.UpdateProductVisibilityRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Antonelly.Catalog.Api.Controllers.PublicCatalogController",
+    "Method": "FindProductBySlug",
+    "RelativePath": "api/public-catalog/FindProductBySlug/{companySlug}/{productSlug}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "companySlug",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "productSlug",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Antonelly.Catalog.Api.Controllers.PublicCatalogController",
+    "Method": "GetCategories",
+    "RelativePath": "api/public-catalog/GetCategories/{companySlug}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "companySlug",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Antonelly.Catalog.Api.Controllers.PublicCatalogController",
+    "Method": "GetCompany",
+    "RelativePath": "api/public-catalog/GetCompany/{companySlug}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "companySlug",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Antonelly.Catalog.Api.Controllers.PublicCatalogController",
+    "Method": "GetHome",
+    "RelativePath": "api/public-catalog/GetHome/{companySlug}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "companySlug",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Antonelly.Catalog.Api.Controllers.PublicCatalogController",
+    "Method": "GetListProducts",
+    "RelativePath": "api/public-catalog/GetListProducts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Antonelly.Catalog.Api.DTOs.PublicCatalog.GetListPublicProductsRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Antonelly.Catalog.Api.Controllers.SetupController",
+    "Method": "GetCategories",
+    "RelativePath": "api/setup/categories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Antonelly.Catalog.Api.Controllers.SetupController",
+    "Method": "GetCompanyPublicInfo",
+    "RelativePath": "api/setup/GetCompanyPublicInfo/{companySlug}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "companySlug",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Antonelly.Catalog.Api.Controllers.SetupController",
+    "Method": "GetStatus",
+    "RelativePath": "api/setup/status",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Antonelly.Catalog.Api.Controllers.SetupController",
+    "Method": "UpdateCompanyPublicInfo",
+    "RelativePath": "api/setup/UpdateCompanyPublicInfo/{companySlug}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "companySlug",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Antonelly.Catalog.Api.DTOs.Setup.UpdateCompanyPublicInfoRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
